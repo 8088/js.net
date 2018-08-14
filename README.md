@@ -2,9 +2,14 @@
 
 The js.net package contains classes for sending and receiving over a network.
 
-## Usage example
+## example
 
 ``` bash
+import URLRequest from 'js/net/loader/URLRequest'
+import WorkerLoader from 'js/net/loader/WorkerLoader'
+import LoaderDataFormat from 'js/net/loader/LoaderDataFormat'
+import LoaderEvent from 'js/events/LoaderEvent'
+
 var url = 'http://127.0.0.1/test.zip'
 var request = new URLRequest(url)
 var loader = new WorkerLoader()
